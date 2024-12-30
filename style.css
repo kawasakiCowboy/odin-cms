@@ -26,6 +26,8 @@
   display: flex;
   flex-direction: column;
   color: white;
+  box-shadow: 5px 5px 10px rgb(197, 197, 197);
+  z-index: 2;
 }
 
 .header {
@@ -35,12 +37,27 @@
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 10px rgb(197, 197, 197);
   z-index: 1;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
-  
-.header-item, .content-containter-item {
-  border: 1px solid rgb(214, 214, 214);
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 30px;
+}
+
+.greeting {
+  padding-left: 20px;
+}
+
+.header input {
+  border: none;
+  background-color:  rgb(226, 232, 240); 
+  border-radius: 10px;
+  width: 80%;
+  height: 25px;
 }
   
 .sidebar {
@@ -101,6 +118,7 @@
 
 .project {
   background-color: white;
+  border-left: 8px solid rgb(240, 180, 41);
 }
 
 .announcements {
@@ -115,6 +133,24 @@
   margin-bottom: 20px;
   flex: 1;
   background-color: white;
+  padding: 20px;
+}
+
+.announcements-block h4 {
+  font-size: 14px;
+}
+
+.announcements-block p {
+  font-size: 13px;
+}
+
+.underline {
+  border-bottom: 1px solid rgb(184, 184, 184);
+  padding-bottom: 10px;
+}
+
+.announcement {
+  padding-top: 10px;
 }
 
 .trending {
@@ -128,6 +164,67 @@
   margin-top: 10px;
   flex: 1;
   background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+.trending-block-item {
+  display: flex;
+  font-size: 13px;
+  align-items: center;
+  flex-shrink: 1;
+}
 
+.greeting-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 10px;
+}
+
+.account-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 70px;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.user-info {
+  margin-left: 20px;
+}
+
+.block {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(197, 197, 197);
+}
+
+.greet {
+  padding-bottom: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.greet-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.actions button {
+  border: none;
+  width: 100px;
+  height: 35px;
+  background-color: rgb(25,146,212);
+  color: white;
+  font-weight: bold;
+  border-radius: 18px;
+}
