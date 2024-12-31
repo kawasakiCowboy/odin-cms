@@ -98,6 +98,8 @@
   grid-template-columns: 2.5fr 1fr;
   grid-template-rows: 1fr 1fr;
   padding: 30px;
+  min-height: 0;
+  min-width: 0;
 }
 
 .projects-container {
@@ -111,6 +113,7 @@
   grid-template-rows: 1fr 1fr 1fr;
   height: 95%;
   gap: 20px;
+  flex-grow: 0;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 10px;
